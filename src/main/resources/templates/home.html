@@ -1,0 +1,20 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+
+<h1 align="center" class="form-signing-heading">Social Login</h1>
+
+<div align="center">Benvenuto <span th:text = "${name}"/></div>
+<div align="center">Questa è la tua mail: <span th:text = "${email}"/></div>
+<div align="center">
+    <a href="/logout" target="_blank" title="Logout"><input name="button" value="Logout" style="  font-size:20px; color:#ffffff; background-color: #5a6e6a;" type="submit"></a>
+</div>
+
+</body>
+</html>
